@@ -23,6 +23,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
+app.use('/');
+
 app.use('/', sanpham);
 app.use('/', loaisp);
 app.use('/', taikhoan);
