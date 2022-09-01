@@ -37,7 +37,8 @@ app.use('/', donhang);
 app.use('/', ctdh);
 app.use('/', giohang);
 
-var server = app.listen(3000, function () {
+const PORT = process.env.PORT || 3000;
+var server = app.listen(PORT, function () {
     console.log('Server listening on port ' + server.address().port);
 });
 module.exports = app;
