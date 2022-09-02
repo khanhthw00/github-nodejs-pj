@@ -5,12 +5,6 @@ const { response, route } = require('../server');
 
 let conn = require('../Dbconnection.js');
 
-router.get('/', function (req, res) {
-    conn.query("SELECT sanpham.*, loaisp.* FROM sanpham, loaisp WHERE sanpham.IDLOAI = loaisp.IDLOAI ORDER BY sanpham.IDSP DESC", function (err, result, fields) {
-        if (err) throw err;
-        res.json(result);
-    });
-});
 
 //sanpham
 router.get('/sanpham', function (req, res) {

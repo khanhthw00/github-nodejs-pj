@@ -1,5 +1,6 @@
 var express = require('express');
 const cors = require('cors');
+var router = express.Router();
 
 var sanpham = require('./routes/sanpham');
 var loaisp = require('./routes/loaisanpham');
@@ -14,16 +15,20 @@ var quyen = require('./routes/quyen');
 var donhang = require('./routes/donhang');
 var ctdh = require('./routes/ctdonhang');
 var giohang = require('./routes/giohang');
+let conn = require('../Dbconnection.js');
 
 // var connection = require('./Dbconnection');
 
 var app = express();
 
+app.get('/', function (req, res) {
+    res.send('<h1>hello nodejs</h1>')
+});
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 
-app.use('/');
 
 app.use('/', sanpham);
 app.use('/', loaisp);
