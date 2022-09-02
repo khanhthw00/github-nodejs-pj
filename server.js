@@ -1,6 +1,5 @@
 var express = require('express');
 const cors = require('cors');
-var router = express.Router();
 
 var sanpham = require('./routes/sanpham');
 var loaisp = require('./routes/loaisanpham');
@@ -15,7 +14,6 @@ var quyen = require('./routes/quyen');
 var donhang = require('./routes/donhang');
 var ctdh = require('./routes/ctdonhang');
 var giohang = require('./routes/giohang');
-let conn = require('../Dbconnection.js');
 
 // var connection = require('./Dbconnection');
 
