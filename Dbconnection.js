@@ -5,7 +5,7 @@ var connection = mysql.createPool({
     user: 'root',
     password: 'khanhthu.kute2607',
     database: 'doanthuctap',
-    socketPath: "/Applications/MAMP/tmp/mysql/mysql.sock",
+    address: "/Applications/MAMP/tmp/mysql/mysql.sock",
     multipleStatements: true
 });
 module.exports = connection;
