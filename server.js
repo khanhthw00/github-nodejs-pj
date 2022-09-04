@@ -19,9 +19,9 @@ var giohang = require('./routes/giohang');
 
 var app = express();
 
-app.get('/', function (req, res) {
-    res.send('<h1>hello nodejs</h1>')
-});
+// app.get('/', function (req, res) {
+//     res.send('<h1>hello nodejs</h1>')
+// });
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

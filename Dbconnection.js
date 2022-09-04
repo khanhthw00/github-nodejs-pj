@@ -1,8 +1,8 @@
 var mysql = require('mysql');
 var connection = mysql.createPool({
-    // host: 'localhost',
+    host: 'localhost',
 
-    host: 'https://gear-api-project.herokuapp.com',
+    // host: 'https://gear-api-project.herokuapp.com',
     user: 'root',
     password: 'khanhthu.kute2607',
     database: 'doanthuctap',
